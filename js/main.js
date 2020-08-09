@@ -1,3 +1,5 @@
+$('[data-toggle="tooltip"]').tooltip();
+
 function buildQueryString(q) {
   var strings = {
     position: q.position,

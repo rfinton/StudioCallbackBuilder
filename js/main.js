@@ -36,9 +36,11 @@ document.querySelector('input[type="submit"]').addEventListener('click', functio
 
 document.querySelector('button').addEventListener('click', function() {
   var text = document.querySelector('textarea');
+  text.removeAttribute('disabled');
   text.select();
   text.setSelectionRange(0, 99999);
   document.execCommand('copy');
+  text.setAttribute('disabled', true);
   $('.toast').toast({delay: 3000});
   $('.toast').toast('show');
 });

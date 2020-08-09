@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <main class="pt-5">
+      <div class="row">
+        <div class="col">
+          <form onsubmit="return false;">
+            <div class="form-inline">
+              <label for="position" class="mr-sm-3">Purl Position</label>
+              <select name="position" id="position" class="form-control mb-2 mr-sm-2">
+                <option value="Prefix">Prefix</option>
+                <option value="Suffix">Suffix</option>
+              </select>
+            </div>
+            <div class="form-inline">
+              <label for="callback" class="mr-sm-3">Callback</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="callback" placeholder="1:1:1" required>
+            </div>
+            
+            <div class="form-inline">
+              <label for="callback_name" class="mr-sm-3">CallbackName<em style="color:gray; margin-left: 3px;">(Max 40 char)</em></label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="callback_name" placeholder="sr20s1ar1" required>
+            </div>
+            
+            <div class="form-inline">
+              <label for="uri" class="mr-sm-3">URI</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="uri" placeholder="www.oc.edu">
+            </div>
+            
+            <div class="form-inline">
+              <label for="evt" class="mr-sm-3">Event Code</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="evt" placeholder="201916">
+            </div>
+
+            <div class="d-flex justify-content-center mt-3 pr-5">
+              <input type="submit" class="btn btn-warning shadow-sm" value="Build">
+            </div>
+            
+          </form>
+        </div>
+        <div class="col p-4 border rounded" style="border-color: gray;">
+          <textarea class="form-control" rows="10" cols="20" name="output"></textarea>
+          <button class="btn btn-secondary hidden">Copy <i class="fa fa-clipboard" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast">
+      <div class="toast-header">
+        Notification:
+      </div>
+      <div class="toast-body">
+        Text Copied to Clipboard
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

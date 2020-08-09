@@ -1,0 +1,15 @@
+.form-inline label {
+  min-width: 200px;
+  justify-content: flex-start;
+}
+
+.toast {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+textarea.form-control {
+  border: none;
+  resize: none;
+}
